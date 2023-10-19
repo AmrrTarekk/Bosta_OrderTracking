@@ -2,17 +2,11 @@ import { useTranslation } from "react-i18next";
 import "./App.css";
 import axiosDefault from "./utilities/api";
 import { useEffect } from "react";
-// import { changeLanguage } from "i18next";
-// import { useDispatch, useSelector } from "react-redux";
-// import { translate } from "./redux/slices/languageSlice";
-// import { Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import NavBar from "./components/navbar";
 
 function App() {
-  // const count = useSelector((state) => state.counter.value);
-  // const lang = useSelector((state) => state.language.lang);
-  // const dispatch = useDispatch();
-
+  const { t } = useTranslation();
   const fn = async () => {
     await axiosDefault
       .get("7234258")
@@ -26,19 +20,14 @@ function App() {
     fn();
   }, []);
 
-  const { t } = useTranslation();
-  // const handleClick = () => {
-  //   dispatch(translate());
-  //   changeLanguage(lang);
-  // };
   return (
     <div className={t("class")}>
       <NavBar />
-      {/* <Routes> */}
-      {/* <Route path="/" element={<Layout />}>
+      <Routes>
+        <Route path="/" element={<Layout />}>
           <Route path="order-tracking/" element={<Shipment />} />
-        </Route> */}
-      {/* </Routes> */}
+        </Route>
+      </Routes>
     </div>
   );
 }

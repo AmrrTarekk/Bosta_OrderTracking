@@ -17,7 +17,7 @@
   border-top: 3px solid white;
 }
 .header a:hover {
-  border-top: 3px solid red;
+  color: rgb(227, 6, 19) !important;
 }
 .header .logo {
   color: rgb(227, 6, 19);
@@ -25,4 +25,7 @@
 }
 #language-btn {
   color: rgb(227, 6, 19) !important;
+}
+#language-btn:hover {
+  color: #101010 !important;
 }

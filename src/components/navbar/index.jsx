@@ -8,7 +8,6 @@ import { translate } from "../../redux/slices/languageSlice";
 
 const NavBar = () => {
   const { t } = useTranslation();
-  //   const lang = useSelector((state) => state.language.lang);
   const dispatch = useDispatch();
   const handleLang = (event) => {
     event.preventDefault();
@@ -32,7 +31,7 @@ const NavBar = () => {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
-            <Nav className="me-auto ">
+            <Nav className="mx-auto ">
               <Nav.Link href="/">{t("Home")}</Nav.Link>
               <Nav.Link href="#action2">{t("Pricing")}</Nav.Link>
               <Nav.Link href="#action2">{t("ContactSales")}</Nav.Link>
