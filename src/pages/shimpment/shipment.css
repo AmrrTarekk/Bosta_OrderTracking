@@ -1,0 +1,74 @@
+.shipment {
+  padding: 5vh;
+}
+.shipment-status-container {
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+}
+.status-details {
+  padding: 15px 35px;
+  border-bottom: 1px solid #e8e8e8;
+  margin-bottom: 30px;
+}
+.shipment-details p {
+  color: #909090;
+  font-weight: 500;
+}
+.shipment-details h6 {
+  font-weight: 700;
+  font-size: 18px;
+}
+.prog-ar {
+  transform: rotateY(-180deg);
+}
+
+.progress-steps-status {
+  padding: 15px 60px;
+}
+.labels {
+  width: 102%;
+}
+.progress-label {
+  margin-right: -10px;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.marked-label {
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+.progress-label:nth-child(4) {
+  margin-right: 15px;
+}
+
+.ship-status-title {
+  font-weight: 600;
+  margin-top: 30px;
+}
+.ship-status-address {
+  background-color: #eeeeee;
+  border-radius: 13px;
+  padding: 25px 15px;
+  box-shadow: 0 1px 5px rgb(0 0 0 / 5%);
+  margin-bottom: 20px;
+}
+.ship-status-address p {
+  color: #767676;
+  font-weight: 500;
+}
+.ship-status-help {
+  border-radius: 13px;
+  padding: 25px 15px;
+  box-shadow: 0 1px 5px rgb(0 0 0 / 12%);
+  margin-top: 20px;
+}
+
+.ship-status-help button {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  padding: 4px 45px;
+}

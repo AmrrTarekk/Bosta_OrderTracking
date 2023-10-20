@@ -1,10 +1,8 @@
 import { Navbar, Nav, Container, NavDropdown, Form } from "react-bootstrap";
 import "./navbar.css";
-
 import { useTranslation } from "react-i18next";
 import { useDispatch } from "react-redux";
 import { translate } from "../../redux/slices/languageSlice";
-// import { changeLanguage } from "i18next";
 
 const NavBar = () => {
   const { t } = useTranslation();
@@ -37,7 +35,7 @@ const NavBar = () => {
               <Nav.Link href="#action2">{t("ContactSales")}</Nav.Link>
             </Nav>
             <Form className="d-flex">
-              <Nav c>
+              <Nav>
                 <NavDropdown
                   title={t("TrackingShipment")}
                   id="navbarScrollingDropdown"

@@ -1,0 +1,35 @@
+.check-icon {
+  font-size: 1.5rem;
+  border-radius: 90%;
+  background-color: white;
+}
+
+.truck-icon {
+  width: 26px;
+  height: 26px;
+  font-size: 1.5rem;
+  color: white;
+}
+.icon-div {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  /* background-color: rgba(211, 211, 211, 0.957); */
+  background: white;
+  color: rgba(211, 211, 211, 0.957);
+  border: 1px rgba(211, 211, 211, 0.957) solid;
+}
+.notAccomplished-icon {
+  color: rgba(211, 211, 211, 0.957);
+}
+.accomplished-icon {
+  border: none;
+}
+
+.delivered-icon {
+  font-size: 1rem;
+  color: white;
+}

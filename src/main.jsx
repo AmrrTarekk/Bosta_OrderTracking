@@ -13,7 +13,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
       <Provider store={store}>
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<div className="text-center">Loading...</div>}>
           <Routes>
             <Route path="/*" element={<App />} />
           </Routes>

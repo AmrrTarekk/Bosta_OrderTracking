@@ -11,27 +11,73 @@
   "HomePage": {
     "title": "الرجاء إدخال رقم الشحنة وتتبع شحنتك.",
     "subTitle": "تتبع شحنة أخرى",
-    "placeholder": "رقم التعقب."
+    "placeholder": "رقم التتبع"
   },
   "Tracking": {
     "ShipmentNo": "رقم الشحنة",
     "LatestUpdate": "اخر تحديث",
     "MerchantName": "اسم التاجر",
     "DeliveryTime": "موعد التسليم خلال",
-    "TICKETCREATED": "تم إنشاء الشحنه",
-    "PACKAGERECEIVED": "تم استلام الشحنه من التاجر",
-    "OUTFORDELIVERY": "الشحنة خرجت للتسليم",
-    "DELIVERED": "تم التسليم",
+    "DELIVERED": "تم تسليم الشحنة",
+    "CANCELLED": "تم إلغاء الشحنة",
+    "DELIVERED_TO_SENDER": "لم يتم تسليم الشحنة",
+
     "ShipmentDetails": "تفاصيل الشحنة",
-    "Branch": "الفرع",
-    "Date": "التاريخ",
-    "Time": "الوقت",
-    "Details": "تفاصيل",
+
     "DeliveryAddress": "عنوان التسليم",
     "Address": "امبابة شارع حرب مدينة العمال بجوار البرنس ",
     "problem": "هل يوجد مشكلة في شحنتك؟",
     "report": "ابلاغ عن مشكلة"
   },
+  "Progress": {
+    "DELIVERED": "تم التسليم ",
+    "TICKETCREATED": "تم إنشاء الشحنة",
+    "PACKAGERECEIVED": "تم استلام الشحنة من التاجر",
+    "OUTFORDELIVERY": "الشحنة خرجت للتسليم",
+    "CANCELLEDREASON": "تم إلغاء الشحنة من التاجر",
+    "RETURNREASON": "العميل غير متواجد في العنوان"
+  },
+  "Saturday": "السبت",
+  "Sunday": "الأحد",
+  "Monday": "الأثنين",
+  "Tuesday": "الثلاثاء",
+  "Wednesday": "الأربعاء",
+  "Thursday": "الخميس",
+  "Friday": "الجمعة",
+
+  "Jan": "يناير",
+  "Feb": "فبراير",
+  "Mar": "مارس",
+  "Apr": "إبريل",
+  "May": "مايو",
+  "Jun": "يونيو",
+  "Jul": "يوليو",
+  "Aug": "أغسطس",
+  "Sep": "سبتمبر",
+  "Sept": "سبتمبر",
+  "Oct": "أكتوبر",
+  "Nov": "نوفمبر",
+  "Dec": "ديسمبر",
+
+  "Branch": "الفرع",
+  "Date": "التاريخ",
+  "Time": "الوقت",
+  "Details": "تفاصيل",
+
+  "Cairo Sorting Facility": "منشأة الفرز بالقاهرة",
+  "Nasr City": "مدينة نصر",
+  "Tanta Hub": "محور طنطا",
+
+  "TICKET_CREATED": "تم إنشاء الشحنة",
+  "PACKAGE_RECEIVED": "تم استلام الشحنة من التاجر",
+  "IN_TRANSIT": "جاري التوصيل",
+  "NOT_YET_SHIPPED": "جاري الشحن",
+  "OUT_FOR_DELIVERY": "الشحنة خرجت للتوصيل",
+  "WAITING_FOR_CUSTOMER_ACTION": "في إنتظار العميل",
+  "DELIVERED": "تم التسليم ",
+  "CANCELLED": "تم إلغاء الشحنة",
+  "DELIVERED_TO_SENDER": "لم يتم تسليم الشحنة",
+
   "SignIn": "تسجيل الدخول",
   "lang": "English",
   "class": "bodyAr"

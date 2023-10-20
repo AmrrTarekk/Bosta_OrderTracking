@@ -1,0 +1,41 @@
+.ant-table {
+  font-family: "Cairo", sans-serif !important;
+  border: 1px solid #f0f0f0;
+}
+.ant-table-cell::before {
+  visibility: hidden;
+}
+.ant-table-row-level-0:last-child .ant-table-cell:last-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.table-with-note-ar
+  .ant-table-row-level-0:last-child
+  .ant-table-cell:last-child::after {
+  content: "تم إلغاء الشحنة من التاجر";
+  color: red !important;
+  font-size: 0.75rem;
+}
+.table-with-note-en
+  .ant-table-row-level-0:last-child
+  .ant-table-cell:last-child::after {
+  content: "Cancelled by the merchant";
+  color: red !important;
+  font-size: 0.75rem;
+}
+/* td,
+th {
+  text-align: left;
+  padding: 15px 30px;
+}
+thead tr {
+  background-color: #eeeeee;
+  color: #aaaaaa;
+}
+tr {
+  color: #767676;
+  font-weight: 600;
+  border-bottom: 1px solid #dedede;
+  height: 50px;
+} */

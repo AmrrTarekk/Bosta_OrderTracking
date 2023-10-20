@@ -1,31 +1,32 @@
 import { useTranslation } from "react-i18next";
 import "./App.css";
-import axiosDefault from "./utilities/api";
-import { useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
-import NavBar from "./components/navbar";
+// import NavBar from "./components/navbar";
+import Layout from "./layout/Layout";
+import Home from "./pages/home/Home";
+import ShipmentDetails from "./pages/shimpment/ShipmentDetails";
 
 function App() {
   const { t } = useTranslation();
-  const fn = async () => {
-    await axiosDefault
-      .get("7234258")
-      .then(({ data }) => console.log(data))
-      .catch((err) => {
-        console.log(err);
-      });
-  };
+  // const fn = async () => {
+  //   await axiosDefault
+  //     .get("7234258")
+  //     .then(({ data }) => console.log(data))
+  //     .catch((err) => {
+  //       console.log(err);
+  //     });
+  // };
 
-  useEffect(() => {
-    fn();
-  }, []);
+  // useEffect(() => {
+  //   fn();
+  // }, []);
 
   return (
-    <div className={t("class")}>
-      <NavBar />
+    <div className={`${t("class")}`}>
       <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route path="order-tracking/" element={<Shipment />} />
+        <Route element={<Layout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="order-tracking/:id" element={<ShipmentDetails />} />
         </Route>
       </Routes>
     </div>
