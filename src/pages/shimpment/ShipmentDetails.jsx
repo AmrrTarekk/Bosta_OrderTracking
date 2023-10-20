@@ -20,7 +20,7 @@ function ShipmentDetails() {
           <div className="col-12">
             <ShipmentStatus />
           </div>
-          <div className="col-12 mt-4">
+          <div className="col-12 my-4">
             <ShipmentData />
           </div>
         </div>

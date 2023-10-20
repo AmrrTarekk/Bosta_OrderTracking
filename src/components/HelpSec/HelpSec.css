@@ -1,0 +1,14 @@
+.ship-status-help {
+  border-radius: 13px;
+  padding: 25px 15px;
+  box-shadow: 0 1px 5px rgb(0 0 0 / 12%);
+  margin-top: 20px;
+}
+
+.ship-status-help button {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  padding: 4px 45px;
+}

@@ -17,19 +17,17 @@ function ShipmentStatus() {
   let returnFlag = false;
   switch (orderDetails?.CurrentStatus?.state) {
     case "DELIVERED":
-      // color = "rgb(227, 6, 19)";
       color = "rgb(53,181,0)";
       percent = 100;
       break;
     case "DELIVERED_TO_SENDER":
       color = "rgb(249,186,2)";
-      // color = "rgb(227, 6, 19)";
-      percent = 65;
+      percent = 66;
       returnFlag = true;
       break;
     case "CANCELLED":
       color = "rgb(227, 6, 19)";
-      percent = 65;
+      percent = 66;
       cancelFlag = true;
       break;
   }
@@ -41,7 +39,6 @@ function ShipmentStatus() {
     t(lastUpdate.split(" -")[0]) + lastUpdate.split(" -")[1];
   const delivery = dateFormat(orderDetails?.PromisedDate).split(" ");
   const deliveryDate = `${delivery[2]} ${t(delivery[1])} ${delivery[3]}`;
-  // const color = "rgb(227, 6, 19)";
 
   return (
     <>

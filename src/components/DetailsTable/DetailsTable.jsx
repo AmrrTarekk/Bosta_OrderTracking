@@ -54,11 +54,10 @@ import "./DetailsTable.css";
 const DetailsTable = () => {
   const { t } = useTranslation();
   const { orderDetails, loading } = useSelector((state) => state.shipment);
-  const noteFlag =
-    orderDetails?.CurrentStatus?.state === "DELIVERED_TO_SENDER" ||
-    orderDetails?.CurrentStatus?.state === "CANCELLED"
-      ? true
-      : false;
+  const noteFlagRed =
+    orderDetails?.CurrentStatus?.state === "CANCELLED" ? true : false;
+  const noteFlagYellow =
+    orderDetails?.CurrentStatus?.state === "DELIVERED_TO_SENDER" ? true : false;
   const lang = useSelector((state) => state.language.lang);
   const detailsArray = orderDetails?.TransitEvents;
 
@@ -98,10 +97,14 @@ const DetailsTable = () => {
       {!loading && (
         <Table
           className={
-            noteFlag
+            noteFlagRed
               ? lang === "ar"
-                ? "table-with-note-ar"
-                : "table-with-note-en"
+                ? "table-with-note-ar-red"
+                : "table-with-note-en-red"
+              : noteFlagYellow
+              ? lang === "ar"
+                ? "table-with-note-ar-yellow"
+                : "table-with-note-en-yellow"
               : ""
           }
           style={{ overflow: "auto" }}

@@ -5,37 +5,43 @@
 .ant-table-cell::before {
   visibility: hidden;
 }
+
+.ant-table-thead .ant-table-cell {
+  color: rgb(156, 164, 182) !important;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
 .ant-table-row-level-0:last-child .ant-table-cell:last-child {
   display: flex;
   flex-direction: column;
 }
 
-.table-with-note-ar
+.table-with-note-ar-red
   .ant-table-row-level-0:last-child
   .ant-table-cell:last-child::after {
   content: "تم إلغاء الشحنة من التاجر";
-  color: red !important;
+  color: rgb(227, 6, 19) !important;
   font-size: 0.75rem;
 }
-.table-with-note-en
+.table-with-note-en-red
   .ant-table-row-level-0:last-child
   .ant-table-cell:last-child::after {
   content: "Cancelled by the merchant";
-  color: red !important;
+  color: rgb(227, 6, 19) !important;
   font-size: 0.75rem;
 }
-/* td,
-th {
-  text-align: left;
-  padding: 15px 30px;
+.table-with-note-ar-yellow
+  .ant-table-row-level-0:last-child
+  .ant-table-cell:last-child::after {
+  content: "العميل غير متواجد في العنوان";
+  color: rgb(249, 186, 2) !important;
+  font-size: 0.75rem;
 }
-thead tr {
-  background-color: #eeeeee;
-  color: #aaaaaa;
+.table-with-note-en-yellow
+  .ant-table-row-level-0:last-child
+  .ant-table-cell:last-child::after {
+  content: "The customer is not present at the address";
+  color: rgb(249, 186, 2) !important;
+  font-size: 0.75rem;
 }
-tr {
-  color: #767676;
-  font-weight: 600;
-  border-bottom: 1px solid #dedede;
-  height: 50px;
-} */

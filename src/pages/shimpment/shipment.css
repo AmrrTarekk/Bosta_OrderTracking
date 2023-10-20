@@ -43,32 +43,7 @@
   margin-right: 15px;
 }
 
-.ship-status-title {
+.details-title {
   font-weight: 600;
-  margin-top: 30px;
-}
-.ship-status-address {
-  background-color: #eeeeee;
-  border-radius: 13px;
-  padding: 25px 15px;
-  box-shadow: 0 1px 5px rgb(0 0 0 / 5%);
-  margin-bottom: 20px;
-}
-.ship-status-address p {
-  color: #767676;
-  font-weight: 500;
-}
-.ship-status-help {
-  border-radius: 13px;
-  padding: 25px 15px;
-  box-shadow: 0 1px 5px rgb(0 0 0 / 12%);
-  margin-top: 20px;
-}
-
-.ship-status-help button {
-  background-color: red;
-  color: white;
-  border: none;
-  border-radius: 7px;
-  padding: 4px 45px;
+  margin-top: 0.5rem;
 }
