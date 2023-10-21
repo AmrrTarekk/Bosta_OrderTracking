@@ -17,11 +17,8 @@ const NavBar = () => {
     <div className="header">
       <Navbar className="pb-0 w-100" expand="lg">
         <Container>
-          <Navbar.Brand
-            className="d-flex align-items-center p-0"
-            id="bosta-logo"
-          >
-            <Link className="text-decoration-none mx-0 " to="/">
+          <Navbar className="d-flex align-items-center p-0" id="bosta-logo">
+            <Link className="text-decoration-none  " to="/">
               <img
                 className="imgLogo"
                 src="/images/bosta.png"
@@ -29,15 +26,15 @@ const NavBar = () => {
               />
               <span className="logo fs-4">{t("bosta")}</span>
             </Link>
-          </Navbar.Brand>
+          </Navbar>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav className="mx-auto ">
-              <Nav.Link className="px-0">
-                <Link className="text-decoration-none mx-0" to="/">
+              <Nav className="px-0">
+                <Link className="text-decoration-none" to="/">
                   {t("Home")}
                 </Link>
-              </Nav.Link>
+              </Nav>
               <Nav.Link href="#action2">{t("Pricing")}</Nav.Link>
               <Nav.Link href="#action2">{t("ContactSales")}</Nav.Link>
             </Nav>
