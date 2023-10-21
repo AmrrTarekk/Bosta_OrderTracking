@@ -30,12 +30,28 @@ const DetailsTable = () => {
     {
       title: t("Details"),
       dataIndex: "details",
-      // render: (text) => {
-      //   if (text === "Returned") {
-      //     return ;
-      //   }
-      //   return text;
-      // },
+      render: (text) => {
+        if (text === "Returned" || text === "لم يتم تسليم الشحنة") {
+          return (
+            <div>
+              <p className="mb-0">{text}</p>
+              <p className="table-with-note-yellow mb-0">
+                {t("Progress.RETURNREASON")}
+              </p>
+            </div>
+          );
+        } else if (text === "Cancelled" || text === "تم إلغاء الشحنة") {
+          return (
+            <div>
+              <p className="mb-0">{text}</p>
+              <p className=" table-with-note-red  mb-0">
+                {t("Progress.CANCELLEDREASON")}
+              </p>
+            </div>
+          );
+        }
+        return text;
+      },
     },
   ];
 
