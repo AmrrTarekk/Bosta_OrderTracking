@@ -77,6 +77,12 @@ const DetailsTable = () => {
     {
       title: t("Details"),
       dataIndex: "details",
+      // render: (text) => {
+      //   if (text === "Returned") {
+      //     return ;
+      //   }
+      //   return text;
+      // },
     },
   ];
 

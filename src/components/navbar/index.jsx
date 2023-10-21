@@ -20,7 +20,11 @@ const NavBar = () => {
             id="bosta-logo"
             href="/"
           >
-            <img className="imgLogo" src="./bosta.png" alt="bosta-logo" />
+            <img
+              className="imgLogo"
+              src="../../../public/images/bosta.png"
+              alt="bosta-logo"
+            />
             <span className="logo fs-4">{t("bosta")}</span>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
