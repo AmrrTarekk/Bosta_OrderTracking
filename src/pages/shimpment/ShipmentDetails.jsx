@@ -1,4 +1,3 @@
-// import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import ShipmentData from "./ShipmentData";
 import ShipmentStatus from "./ShipmentProgress";
@@ -7,11 +6,11 @@ import { handleFetchData } from "../../redux/slices/shipmentSlice";
 import { useParams } from "react-router-dom";
 
 function ShipmentDetails() {
-  //   const { orderDetails } = useSelector((state) => state.shipment);
   const { id } = useParams();
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(handleFetchData(id.slice(1)));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
   return (
     <div className="shipment mt-5 mb-3">

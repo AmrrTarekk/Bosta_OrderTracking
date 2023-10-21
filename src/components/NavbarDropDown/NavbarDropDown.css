@@ -11,7 +11,6 @@
   transition: 0.7s;
 }
 .dropdownCustom:hover {
-  /* box-shadow: 0 -1px 0px 1px rgba(0, 0, 0, 0.1); */
   border: 1px solid rgb(232, 232, 232);
   border-bottom: none;
 }

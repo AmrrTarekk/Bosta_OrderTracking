@@ -1,55 +1,8 @@
-// import dateFormat from "dateformat";
-// import { useTranslation } from "react-i18next";
-// import { useSelector } from "react-redux";
-// import "./DetailsTable.css";
-
-// function DetailsTable() {
-//   const { t } = useTranslation();
-//   const { orderDetails } = useSelector((state) => state.shipment);
-//   return (
-//     <>
-//       <p className="ship-status-title">{t("Tracking.ShipmentDetails")}</p>
-//       <div style={{ overflow: "auto" }}>
-//         <table>
-//           <thead>
-//             <tr>
-//               <th>{t("Tracking.Branch")}</th>
-//               <th>{t("Tracking.Date")}</th>
-//               <th>{t("Tracking.Time")}</th>
-//               <th>{t("Tracking.Details")}</th>
-//             </tr>
-//           </thead>
-//           <tbody>
-//             {orderDetails?.TransitEvents?.map((item) => {
-//               if (
-//                 item.state !== "NOT_YET_SHIPPED" &&
-//                 item.state !== "RECEIVED_DELIVERY_LOCATION"
-//               ) {
-//                 return (
-//                   <tr key={item.timestamp}>
-//                     <td>{item?.hub ? item.hub : "Nasr City"}</td>
-//                     <td>{dateFormat(item?.timestamp, "dd/mm/yyyy")}</td>
-//                     <td>{dateFormat(item?.timestamp, "hh:MMTT")}</td>
-//                     <td>{item.state.replace("_", " ")}</td>
-//                   </tr>
-//                 );
-//               }
-//             })}
-//           </tbody>
-//         </table>
-//       </div>
-//     </>
-//   );
-// }
-
-// export default DetailsTable;
 import dateFormat from "dateformat";
 import { Table } from "antd";
 import { useTranslation } from "react-i18next";
 import { useSelector } from "react-redux";
 import "./DetailsTable.css";
-// In the fifth row, other columns are merged into first column
-// by setting it's colSpan to be 0
 
 const DetailsTable = () => {
   const { t } = useTranslation();

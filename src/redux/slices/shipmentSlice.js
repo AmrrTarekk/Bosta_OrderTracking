@@ -40,7 +40,6 @@ export const shipmentSlice = createSlice({
   },
 });
 
-// Action creators are generated for each case reducer function
 // export const {} = shipmentSlice.actions;
 
 export default shipmentSlice.reducer;

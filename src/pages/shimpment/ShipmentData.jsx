@@ -1,4 +1,3 @@
-// import help from "../../assets/help.jpg";
 import { useTranslation } from "react-i18next";
 import DetailsTable from "../../components/DetailsTable/DetailsTable";
 import { useSelector } from "react-redux";
