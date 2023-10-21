@@ -63,7 +63,6 @@ function ProgressBarComp({ percent, color }) {
                       color: `${
                         percent >= 65 ? "white" : "rgba(211, 211, 211, 0.957)"
                       }`,
-                      transform: lang === "ar" ? "" : "rotateY(180deg)",
                     }}
                     icon={faTruckFast}
                   />

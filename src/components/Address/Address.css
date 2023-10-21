@@ -2,6 +2,7 @@
   background-color: rgba(250, 250, 250);
   border-radius: 10px;
   padding: 25px 15px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
 .shipment-address p {
   font-weight: 500;

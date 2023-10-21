@@ -2,7 +2,7 @@
   "Home": "الرئيسية",
   "Pricing": "التسعير",
   "ContactSales": "كلم المبيعات",
-  "TrackingShipment": "تتبع الشحنة",
+  "TrackingShipment": "تتبع شحنتك",
   "Track": {
     "Tracking": "تتبع شحنتك",
     "TrackNo": "أدخل رقم التتبع."
@@ -67,6 +67,8 @@
   "Cairo Sorting Facility": "منشأة الفرز بالقاهرة",
   "Nasr City": "مدينة نصر",
   "Tanta Hub": "محور طنطا",
+  "Haram Hub": "محور الهرم",
+  "FM & Reverse Hub": "FM والمحور العكسي",
 
   "TICKET_CREATED": "تم إنشاء الشحنة",
   "PACKAGE_RECEIVED": "تم استلام الشحنة من التاجر",
@@ -79,6 +81,6 @@
   "DELIVERED_TO_SENDER": "لم يتم تسليم الشحنة",
 
   "SignIn": "تسجيل الدخول",
-  "lang": "English",
+  "lang": "ENG",
   "class": "bodyAr"
 }

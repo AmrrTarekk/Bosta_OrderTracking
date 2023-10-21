@@ -1,14 +1,26 @@
-.ship-status-help {
-  border-radius: 13px;
-  padding: 25px 15px;
-  box-shadow: 0 1px 5px rgb(0 0 0 / 12%);
-  margin-top: 20px;
+.shipment-issues {
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
-
-.ship-status-help button {
-  background-color: red;
-  color: white;
+.shipment-issues img {
+  width: 80px;
+}
+.shipment-issues div {
+  max-width: 200px;
+  width: 100%;
+  text-align: center;
+}
+.shipment-issues button {
+  white-space: nowrap;
+  width: 100%;
+  min-width: 45px;
+  height: 40px;
   border: none;
-  border-radius: 7px;
-  padding: 4px 45px;
+  border-radius: 15px;
+  color: white;
+  background-color: rgb(227, 6, 19);
+}
+.shipment-issues button:hover {
+  color: #000;
+  background: rgb(229, 229, 229);
 }

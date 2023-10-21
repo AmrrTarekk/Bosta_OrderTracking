@@ -14,37 +14,3 @@
   font-size: 3rem !important;
   font-weight: bold;
 }
-.home .ant-input-wrapper {
-  margin: auto;
-  max-width: 455px;
-  width: 100%;
-}
-.home .ant-input-group {
-  box-shadow: 0 2px 4px rgba(29, 41, 57, 0.05), 0 4px 16px rgba(29, 41, 57, 0.1);
-  border-radius: 10px;
-}
-.home .ant-input {
-  height: 60px;
-  width: 100%;
-  padding: 20px;
-  border-radius: 10px 10px;
-  font-size: 1rem;
-}
-.home .ant-input:hover,
-.home .ant-input:focus {
-  border-color: #e3061581 !important;
-}
-.home .ant-input-group-addon button {
-  width: 60px;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #e30613;
-}
-.home .ant-input-group-addon button:hover {
-  background-color: #e30613 !important;
-}
-.home .ant-input-group-addon button svg {
-  font-size: 2.5rem !important;
-}

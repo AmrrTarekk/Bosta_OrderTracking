@@ -1,0 +1,51 @@
+.drop .anticon {
+  font-size: 0.75rem;
+}
+.dropdownCustom {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  border: 1px solid transparent;
+  border-bottom: none;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  transition: 0.7s;
+}
+.dropdownCustom:hover {
+  /* box-shadow: 0 -1px 0px 1px rgba(0, 0, 0, 0.1); */
+  border: 1px solid rgb(232, 232, 232);
+  border-bottom: none;
+}
+.ant-dropdown {
+  border: 1px solid rgb(232, 232, 232);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+h5 {
+  text-align: start;
+  font-size: 0.9rem !important;
+  font-weight: 500;
+  color: rgb(133, 134, 135);
+}
+
+.inp .ant-input {
+  height: 42px !important;
+  min-height: none;
+}
+.inp .ant-input-group-addon button {
+  height: 42px !important;
+  width: 45px;
+}
+.inp .ant-input-wrapper {
+  width: 100%;
+  margin: 0;
+  max-width: 250px;
+}
+.inp .ant-input-group {
+  box-shadow: none;
+}
+
+.inp .ant-input-group-addon button svg {
+  font-size: 1.8rem !important;
+}

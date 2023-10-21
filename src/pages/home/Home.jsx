@@ -1,17 +1,10 @@
 import { useTranslation } from "react-i18next";
-import { useNavigate } from "react-router-dom";
 import "./Home.css";
-import { useState } from "react";
-import Search from "antd/es/input/Search";
+import SearchInput from "../../components/SearchInput/SearchInput";
 
 function Home() {
   const { t } = useTranslation();
-  const [id, setId] = useState(0);
-  const navigate = useNavigate();
 
-  const onSearch = () => {
-    navigate(`/order-tracking/:${id}`);
-  };
   return (
     <div className="home">
       <div className="container h-100">
@@ -19,12 +12,7 @@ function Home() {
           <div className="col-6 w-100 d-flex h-100">
             <div className="home-container">
               <h1 className="home-title">{t("Track.Tracking")}</h1>
-              <Search
-                placeholder={t("HomePage.placeholder")}
-                onChange={(e) => setId(e.target.value)}
-                onSearch={onSearch}
-                enterButton
-              />
+              <SearchInput />
             </div>
           </div>
         </div>

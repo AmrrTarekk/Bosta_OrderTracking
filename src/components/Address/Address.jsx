@@ -6,7 +6,7 @@ function Address() {
   return (
     <>
       <div className="shipment-address">
-        <p>{t("Tracking.Address")}</p>
+        <p className="mb-1">{t("Tracking.Address")}</p>
       </div>
     </>
   );

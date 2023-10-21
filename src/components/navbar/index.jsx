@@ -1,8 +1,9 @@
-import { Navbar, Nav, Container, NavDropdown, Form } from "react-bootstrap";
+import { Navbar, Nav, Container } from "react-bootstrap";
 import "./navbar.css";
 import { useTranslation } from "react-i18next";
 import { useDispatch } from "react-redux";
 import { translate } from "../../redux/slices/languageSlice";
+import NavbarDropDown from "../NavbarDropDown/NavbarDropDown";
 
 const NavBar = () => {
   const { t } = useTranslation();
@@ -13,7 +14,7 @@ const NavBar = () => {
   };
   return (
     <div className="header">
-      <Navbar expand="lg">
+      <Navbar className="pb-0" expand="lg">
         <Container>
           <Navbar.Brand
             className="d-flex align-items-center"
@@ -30,27 +31,16 @@ const NavBar = () => {
               <Nav.Link href="#action2">{t("Pricing")}</Nav.Link>
               <Nav.Link href="#action2">{t("ContactSales")}</Nav.Link>
             </Nav>
-            <Form className="d-flex">
+            <Nav className="d-flex">
               <Nav>
-                <NavDropdown
-                  title={t("TrackingShipment")}
-                  id="navbarScrollingDropdown"
-                >
-                  {/* <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
-                      Another action
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action5">
-                      Something else here
-                    </NavDropdown.Item> */}
-                </NavDropdown>
+                <NavbarDropDown />
+                <div className="line"></div>
                 <Nav.Link href="#action2">{t("SignIn")}</Nav.Link>
                 <Nav.Link id="language-btn" onClick={handleLang}>
                   {t("lang")}
                 </Nav.Link>
               </Nav>
-            </Form>
+            </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>

@@ -12,9 +12,9 @@ function ShipmentDetails() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(handleFetchData(id.slice(1)));
-  }, []);
+  }, [id]);
   return (
-    <div className="shipment">
+    <div className="shipment mt-5">
       <div className="container">
         <div className="row">
           <div className="col-12">
