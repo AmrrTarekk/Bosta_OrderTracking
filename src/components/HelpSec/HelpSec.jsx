@@ -9,7 +9,7 @@ function HelpSec() {
         <div>
           <img
             style={{ width: 80 + "px" }}
-            src="./images/helpSec.jpg"
+            src="/images/helpSec.jpg"
             alt="help"
           />
         </div>
