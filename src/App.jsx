@@ -1,28 +1,18 @@
 import { useTranslation } from "react-i18next";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
-// import NavBar from "./components/navbar";
 import Layout from "./layout/Layout";
 import Home from "./pages/home/Home";
 import ShipmentDetails from "./pages/shimpment/ShipmentDetails";
+import { Helmet } from "react-helmet";
+import { useSelector } from "react-redux";
 
 function App() {
   const { t } = useTranslation();
-  // const fn = async () => {
-  //   await axiosDefault
-  //     .get("7234258")
-  //     .then(({ data }) => console.log(data))
-  //     .catch((err) => {
-  //       console.log(err);
-  //     });
-  // };
-
-  // useEffect(() => {
-  //   fn();
-  // }, []);
-
+  const { lang } = useSelector((state) => state.language);
   return (
-    <div className={`${t("class")}`}>
+    <div className={`${t("langDir")}`}>
+      <Helmet htmlAttributes={{ lang: lang }} />
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
@@ -34,10 +24,3 @@ function App() {
 }
 
 export default App;
-
-{
-  /* <div>
-<button onClick={handleClick}>{lang}</button>
-<div>{t("header.Track.Tracking")}</div>
-</div> */
-}

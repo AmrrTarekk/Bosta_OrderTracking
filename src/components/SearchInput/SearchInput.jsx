@@ -11,8 +11,9 @@ function SearchInput({ className }) {
   const navigate = useNavigate();
 
   const onSearch = () => {
-    console.log("first");
-    navigate(`/order-tracking/:${id}`, { replace: true });
+    if (id) {
+      navigate(`/order-tracking/:${id}`);
+    }
     setId("");
   };
   return (

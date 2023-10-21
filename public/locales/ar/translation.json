@@ -1,6 +1,6 @@
 {
   "Home": "الرئيسية",
-  "Pricing": "التسعير",
+  "Pricing": "الأسعار",
   "ContactSales": "كلم المبيعات",
   "TrackingShipment": "تتبع شحنتك",
   "Track": {
@@ -82,5 +82,5 @@
 
   "SignIn": "تسجيل الدخول",
   "lang": "ENG",
-  "class": "bodyAr"
+  "langDir": "dirAr"
 }

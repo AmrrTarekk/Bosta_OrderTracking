@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import { useDispatch } from "react-redux";
 import { translate } from "../../redux/slices/languageSlice";
 import NavbarDropDown from "../NavbarDropDown/NavbarDropDown";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const { t } = useTranslation();
@@ -14,20 +15,29 @@ const NavBar = () => {
   };
   return (
     <div className="header">
-      <Navbar className="pb-0" expand="lg">
+      <Navbar className="pb-0 w-100" expand="lg">
         <Container>
           <Navbar.Brand
-            className="d-flex align-items-center"
+            className="d-flex align-items-center p-0"
             id="bosta-logo"
-            href="/"
           >
-            <img className="imgLogo" src="/images/bosta.png" alt="bosta-logo" />
-            <span className="logo fs-4">{t("bosta")}</span>
+            <Link className="text-decoration-none mx-0 " to="/">
+              <img
+                className="imgLogo"
+                src="/images/bosta.png"
+                alt="bosta-logo"
+              />
+              <span className="logo fs-4">{t("bosta")}</span>
+            </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav className="mx-auto ">
-              <Nav.Link href="/">{t("Home")}</Nav.Link>
+              <Nav.Link className="px-0">
+                <Link className="text-decoration-none mx-0" to="/">
+                  {t("Home")}
+                </Link>
+              </Nav.Link>
               <Nav.Link href="#action2">{t("Pricing")}</Nav.Link>
               <Nav.Link href="#action2">{t("ContactSales")}</Nav.Link>
             </Nav>

@@ -14,7 +14,7 @@ function ShipmentDetails() {
     dispatch(handleFetchData(id.slice(1)));
   }, [id]);
   return (
-    <div className="shipment mt-5">
+    <div className="shipment mt-5 mb-3">
       <div className="container">
         <div className="row">
           <div className="col-12">
