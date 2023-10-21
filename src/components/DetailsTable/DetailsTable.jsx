@@ -39,7 +39,7 @@ const DetailsTable = () => {
     },
   ];
 
-  const data = detailsArray?.map((shipment) => {
+  const data = detailsArray?.map((shipment, index) => {
     const allDate = dateFormat(shipment.timestamp, "dd/mm/yyyy hh:MMtt").split(
       " "
     );
@@ -48,6 +48,7 @@ const DetailsTable = () => {
       date: allDate[0],
       time: allDate[1],
       details: t(`${shipment.state}`),
+      key: index,
     };
   });
 
