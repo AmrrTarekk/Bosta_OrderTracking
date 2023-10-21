@@ -53,7 +53,7 @@ function ProgressBarLabels({ color, cancelFlag, returnFlag, percent }) {
             />
           ) : (
             <div
-              className={`icon-div d-lg-none ${
+              className={`icon-div mt-2 d-lg-none ${
                 percent >= 65 ? "accomplished-icon" : ""
               }`}
               style={{
