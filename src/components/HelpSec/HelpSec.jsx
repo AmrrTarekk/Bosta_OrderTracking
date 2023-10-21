@@ -7,7 +7,11 @@ function HelpSec() {
     <>
       <div className="d-flex flex-wrap ship-status-help">
         <div>
-          <img style={{ width: 80 + "px" }} src="./helpSec.jpg" alt="help" />
+          <img
+            style={{ width: 80 + "px" }}
+            src="./images/helpSec.jpg"
+            alt="help"
+          />
         </div>
         <div>
           <p>{t("Tracking.problem")}</p>
