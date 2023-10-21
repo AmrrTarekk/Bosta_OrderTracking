@@ -7,7 +7,7 @@ import ProgressStatus from "../../components/progress/ProgressStatus";
 function ShipmentStatus() {
   const { orderDetails, loading } = useSelector((state) => state.shipment);
   let color;
-  let percent;
+  let percent = 0;
   let cancelFlag = false;
   let returnFlag = false;
   switch (orderDetails?.CurrentStatus?.state) {
