@@ -4,3 +4,7 @@
 .dirEn {
   direction: ltr !important;
 }
+
+.app {
+  height: 101vh;
+}

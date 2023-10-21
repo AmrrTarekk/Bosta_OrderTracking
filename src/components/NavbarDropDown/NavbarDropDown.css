@@ -48,3 +48,15 @@ h5 {
 .inp .ant-input-group-addon button svg {
   font-size: 1.8rem !important;
 }
+
+@media only screen and (max-width: 990px) {
+  .dropdownCustom {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    border: none;
+  }
+  .dropdownCustom:hover {
+    border: none;
+    border-bottom: 1px solid rgb(232, 232, 232);
+  }
+}

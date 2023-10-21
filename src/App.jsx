@@ -12,7 +12,7 @@ function App() {
   const { lang } = useSelector((state) => state.language);
   return (
     <HelmetProvider>
-      <div className={`${t("langDir")}`}>
+      <div className={`${t("langDir")} app`}>
         <Helmet htmlAttributes={{ lang: lang }} />
         <Routes>
           <Route element={<Layout />}>

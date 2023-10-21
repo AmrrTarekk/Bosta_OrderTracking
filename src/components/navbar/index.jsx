@@ -18,7 +18,10 @@ const NavBar = () => {
       <Navbar className="pb-0 w-100" expand="lg">
         <Container>
           <Navbar className="d-flex align-items-center p-0" id="bosta-logo">
-            <Link className="text-decoration-none  " to="/">
+            <Link
+              className="text-decoration-none d-flex align-items-center"
+              to="/"
+            >
               <img
                 className="imgLogo"
                 src="/images/bosta.png"
@@ -41,7 +44,7 @@ const NavBar = () => {
             <Nav className="d-flex">
               <Nav>
                 <NavbarDropDown />
-                <div className="line"></div>
+                <div className="line d-none d-lg-block"></div>
                 <Nav.Link href="#action2">{t("SignIn")}</Nav.Link>
                 <Nav.Link id="language-btn" onClick={handleLang}>
                   {t("lang")}
